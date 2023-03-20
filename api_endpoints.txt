@@ -1,0 +1,10 @@
+DIFFERENT DIFFERENT API URL FOR ONE CRUD OPERATION AT A TIME IN A FUNCTION BASED VIEW
+http://127.0.0.1:8000/api/get_emp/
+http://127.0.0.1:8000/api/create_emp/
+http://127.0.0.1:8000/api/update_emp/
+http://127.0.0.1:8000/api/Pupdate_emp/
+http://127.0.0.1:8000/api/delete_emp/
+
+
+ONE API URL FOR ALL CRUD OPERATIONS IN ONE FUNCTION AT A TIME 
+http://127.0.0.1:8000/api/all_crud_operations/
