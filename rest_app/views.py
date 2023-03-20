@@ -8,6 +8,8 @@ from rest_framework import serializers, status
 import json
 
 
+# hello this is a simple check for git
+
 @api_view(["GET"])
 def get_emp(request, pk=None):        # to get single or all emp
     bytes_data = request.body           # here in this we get data in bytes format
