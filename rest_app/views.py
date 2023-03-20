@@ -7,7 +7,7 @@ from django.db import transaction
 from rest_framework import serializers, status
 import json
 
-# Create your views here.
+
 @api_view(["GET"])
 def get_emp(request, pk=None):        # to get single or all emp
     bytes_data = request.body           # here in this we get data in bytes format
@@ -136,6 +136,9 @@ def all_crud_operations(request, pk=None):
 
     elif request.method == "PATCH":
         py_dict = request.data
+
+        print(request.data)
+
         pk = py_dict.get("id")
         if pk:
             try:
@@ -161,3 +164,5 @@ def all_crud_operations(request, pk=None):
 
     else:
         return JsonResponse({"msg": "Wrong request"})
+    
+
